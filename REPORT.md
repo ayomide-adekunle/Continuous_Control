@@ -60,6 +60,22 @@ OU_THETA = 0.15         # Ornstein-Uhlenbeck noise parameter
 EPSILON = 1.0           # explore->exploit noise process added to act step
 EPSILON_DECAY = 1e-6    # decay rate for noise process
 
+## Neural Network Architecture
+# Actor:
+Input nodes (33) 
+Fully Connected Layer (128 nodes, Relu activation) 
+Batch Normlization
+Fully Connected Layer (128 nodes, Relu activation) 
+Ouput nodes (4 nodes, tanh activation)
+
+# Agent:
+Input nodes (33) 
+Fully Connected Layer (128 nodes, Relu activation) 
+Batch Normlization
+Include Actions at the second fully connected layer
+Fully Connected Layer (128+4 nodes, Relu activation) 
+Ouput node (1 node, no activation)
+
 
 ## Result
 ![image](https://user-images.githubusercontent.com/21956871/140695901-8a2daa39-7e5d-4e9b-ad4b-ca435eba5e57.png)
