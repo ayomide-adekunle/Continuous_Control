@@ -41,4 +41,5 @@ These are the steps I took in the implementation of the Agent
 1. Run experiments, make revisions, and retrain the agent until the performance threshold is reached.
 
 ## Result
-[image3]: Result.png "Result"
+![image](https://user-images.githubusercontent.com/21956871/140695901-8a2daa39-7e5d-4e9b-ad4b-ca435eba5e57.png)
+
