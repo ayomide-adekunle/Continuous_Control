@@ -40,6 +40,11 @@ These are the steps I took in the implementation of the Agent
 1. Select an appropriate algorithm and begin implementing it.
 1. Run experiments, make revisions, and retrain the agent until the performance threshold is reached.
 
+## Algorithm Implementation
+
+The algorithm used for the implementation is below from https://spinningup.openai.com/en/latest/algorithms/ddpg.html
+<img width="728" alt="Screen Shot 2021-11-08 at 9 45 44 AM" src="https://user-images.githubusercontent.com/21956871/140763189-157dee8a-3835-4bab-b9ae-477e0860f5f0.png">
+
 ## Result
 ![image](https://user-images.githubusercontent.com/21956871/140695901-8a2daa39-7e5d-4e9b-ad4b-ca435eba5e57.png)
 
