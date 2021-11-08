@@ -45,6 +45,25 @@ These are the steps I took in the implementation of the Agent
 The algorithm used for the implementation is below from https://spinningup.openai.com/en/latest/algorithms/ddpg.html
 <img width="728" alt="Screen Shot 2021-11-08 at 9 45 44 AM" src="https://user-images.githubusercontent.com/21956871/140763189-157dee8a-3835-4bab-b9ae-477e0860f5f0.png">
 
+## DDPG parameters
+BUFFER_SIZE = int(1e6)  # replay buffer size
+BATCH_SIZE = 128        # minibatch size
+GAMMA = 0.99            # discount factor
+TAU = 1e-3              # for soft update of target parameters
+LR_ACTOR = 1e-3         # learning rate of the actor
+LR_CRITIC = 1e-3        # learning rate of the critic
+WEIGHT_DECAY = 0        # L2 weight decay
+LEARN_EVERY = 20        # learning timestep interval
+LEARN_NUM = 10          # number of learning passes
+OU_SIGMA = 0.2          # Ornstein-Uhlenbeck noise parameter
+OU_THETA = 0.15         # Ornstein-Uhlenbeck noise parameter
+EPSILON = 1.0           # explore->exploit noise process added to act step
+EPSILON_DECAY = 1e-6    # decay rate for noise process
+
+
 ## Result
 ![image](https://user-images.githubusercontent.com/21956871/140695901-8a2daa39-7e5d-4e9b-ad4b-ca435eba5e57.png)
 
+## Future Ideas
+
+A better result could be achieved by experimenting with other algorithms like: PPO (https://arxiv.org/pdf/1707.06347.pdf), A3C (https://arxiv.org/pdf/1602.01783.pdf), and D4PG(https://arxiv.org/abs/1804.08617)
